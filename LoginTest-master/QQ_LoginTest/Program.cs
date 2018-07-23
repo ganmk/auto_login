@@ -30,9 +30,9 @@ namespace LoginTest
             //设置超时等待(隐式等待)时间设置10秒
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10000);
 
-            driver.FindElementByXPath("//*[@id=\"input1\"]").SendKeys("test02");
+            driver.FindElementByXPath("//*[@id=\"input1\"]").SendKeys("username");
     
-            driver.FindElementByXPath("//*[@id=\"input2\"]").SendKeys("gmk020330@");
+            driver.FindElementByXPath("//*[@id=\"input2\"]").SendKeys("password");
 
             driver.FindElementByXPath("//*[@id=\"signin\"]").Click();
             Thread.Sleep(3000);
